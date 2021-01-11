@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  a101product:
+    image: ${DOCKER_REGISTRY-}a101product
+    build:
+      context: .
+      dockerfile: A101Product\Dockerfile
